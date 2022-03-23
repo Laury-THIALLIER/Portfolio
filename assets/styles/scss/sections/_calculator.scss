@@ -1,0 +1,100 @@
+.calculator {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #ffffff;
+  &__statusbar {
+    background-color: #111111;
+    height: 33px;
+  }
+  &__title {
+    background-color: #111111;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    img {
+      height: 30px;
+      margin-left: 15px;
+      cursor: pointer;
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 400;
+      color: white;
+      margin-left: 20px;
+    }
+  }
+  &__background {
+    background-color: #111111;
+    height: 715px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    #output {
+      font-size: 50px;
+      margin-right: 20px;
+      text-align: end;
+      height: 200px;
+    }
+    .grid {
+      height: 335px;
+      width: 390px;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-column-gap: 0;
+      grid-row-gap: 0;
+      background-color: #000000;
+      button {
+        font-size: 26px;
+        color: #ffffff;
+        background-color: #00000000;
+        border: none;
+        cursor: pointer;
+        &.blue {
+          color: #88b5f8 !important;
+        }
+        &.deleteC {
+          font-size: 20px;
+        }
+        &.void {
+          cursor: default;
+        }
+      }
+    }
+  }
+  &__navbar {
+    background-color: #282828;
+    height: 46px;
+  }
+}
+
+@media screen and (max-height: 845px) {
+  .calculator {
+    max-height: 100%;
+    &__background {
+      height: 100vh;
+      .grid {
+        margin-bottom: 130px;
+      }
+    }
+    &__navbar {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .calculator {
+    &__background {
+      .grid {
+        width: 100%;
+      }
+    }
+  }
+}

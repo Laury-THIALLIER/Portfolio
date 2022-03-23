@@ -1,0 +1,49 @@
+.netflix {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #ffffff;
+  &__statusbar {
+    background-color: #000000;
+    height: 33px;
+  }
+  &__title {
+    background-color: #000000;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    img {
+      height: 30px;
+      margin-left: 15px;
+      cursor: pointer;
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 400;
+      color: white;
+      margin-left: 20px;
+    }
+  }
+  &__background {
+    background-color: #000000;
+    height: 685px;
+    padding: 15px 6px;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-column-gap: 6px;
+      grid-row-gap: 6px;
+      img {
+        height: 175px;
+        width: 122px;
+      }
+    }
+  }
+  &__navbar {
+    background-color: #121212;
+    height: 46px;
+  }
+}

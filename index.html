@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+        <link rel="icon" href="assets/images/icons/favicon.ico">
+        <link rel="stylesheet" href="assets/styles/css/main.css">
+        <meta name="description" content="">
+        <title>Portfolio | Laury THIALLIER</title>
+    </head>
+    <body>
+
+    <!--
+          ##          ##
+            ##      ## 
+          ##############
+        ####  ######  ####
+      ######################
+      ##  ##############  ## 
+      ##  ##          ##  ##
+            ####  ####
+    -->
+
+        <div class="phone">
+
+            <div class="statusbar">
+                <div class="statusbar__hour" id="top_hour"></div>
+                <div class="statusbar__icons">
+                    <img src="assets/images/icons/statusbar_icons.svg" height="15px" width="94px" draggable="false">
+                    <p>82 %</p>
+                </div>
+            </div>
+
+            <!-- ACCUEIL -->
+
+            <main>
+                <div class="clock">
+                    <p class="clock__hour" id="home_hour"></p>
+                    <p class="clock_date" id="home_day"></p>
+                </div>
+                <div class="apps">
+                    <div class="apps__app">
+                        <img id="trello" src="assets/images/icons/trello.svg" alt="Trello" height="55px" width="55px" draggable="false">
+                        <p>Projets</p>
+                    </div>
+                    <div class="apps__app">
+                        <img id="linkedin" src="assets/images/icons/linkedin.svg" alt="LinkedIn" height="55px" width="55px" draggable="false">
+                        <p>Expérience</p>
+                    </div>
+                    <div class="apps__app">
+                        <img id="steam" src="assets/images/icons/steam.svg" alt="Steam" height="55px" width="55px" draggable="false">
+                        <p>Profil</p>
+                    </div>
+                    <div class="apps__app">
+                        <img id="gallery" src="assets/images/icons/gallery.svg" alt="Galerie" height="55px" width="55px" draggable="false">
+                        <p>Hobbies</p>
+                    </div>
+                    <div class="apps__app">
+                        <img id="music" src="assets/images/icons/music.svg" alt="Musique" height="55px" width="55px" draggable="false">
+                        <p>Musique</p>
+                    </div>
+                    <div class="apps__app">
+                        <img id="netflix" src="assets/images/icons/netflix.svg" alt="Netflix" height="55px" width="55px" draggable="false">
+                        <p>Netflix</p>
+                    </div>
+                    <div class="apps__app">
+                        <img id="calculator" src="assets/images/icons/calculator.svg" alt="Calculatrice" height="55px" width="55px" draggable="false">
+                        <p>Calculatrice</p>
+                    </div>
+                    <div class="apps__app">
+                        <img id="dashlane" src="assets/images/icons/dashlane.svg" alt="Dashlane" height="55px" width="55px" draggable="false">
+                        <p>Dashlane</p>
+                    </div>
+                    <div class="apps__app">
+                        <img id="notes" src="assets/images/icons/notes.svg" alt="Notes" height="55px" width="55px" draggable="false">
+                        <p>Notes</p>
+                    </div>
+                </div>
+                <div class="bottom_apps">
+                    <div class="bottom_apps__app">
+                        <a href="tel:0601790567"><img src="assets/images/icons/call.svg" alt="Téléphone" height="55px" width="55px" draggable="false"></a>
+                    </div>
+                    <div class="bottom_apps__app">
+                        <img id="gmail" src="assets/images/icons/gmail.svg" alt="Gmail" height="55px" width="55px" draggable="false">
+                    </div>
+                    <div class="bottom_apps__app">
+                        <img id="messages" src="assets/images/icons/messages.svg" alt="Messages" height="55px" width="55px" draggable="false">
+                    </div>
+                    <div class="bottom_apps__app">
+                        <a href="https://github.com/Laury-THIALLIER" target="_blank"><img src="assets/images/icons/github.svg" alt="GitHub" height="55px" width="55px" draggable="false"></a>
+                    </div>
+                </div>
+            </main>
+
+            <!-- TRELLO (PROJETS) -->
+
+            <section class="trello">
+                <div class="trello__statusbar"></div>
+                <div class="trello__title">
+                    <img id="trelloBackToHome" src="assets/images/icons/arrow.svg" alt="Retour">
+                    <h2>Projets</h2>
+                </div>
+                <div class="trello__background">
+                    <div class="column" id="column">
+                        <!-- Factory project.js getProjectCardDOM -->
+                    </div>
+                </div>
+                <div class="trello__navbar"></div>
+            </section>
+
+            <!-- TRELLO (DÉTAILS PROJET) -->
+
+            <section class="trello_details" id="trello_details">
+                <!-- Factory project.js getProjectDetailsDOM -->
+            </section>
+
+            <!-- LINKEDIN (EXPÉRIENCE) -->
+
+            <section class="linkedin">
+                <div class="linkedin__statusbar"></div>
+                <div class="linkedin__title">
+                    <img id="linkedinBackToHome" src="assets/images/icons/arrow.svg" alt="Retour">
+                    <h2>Expérience</h2>
+                </div>
+                <div class="linkedin__background">
+                    <div class="infos">
+                        <div class="banner"></div>
+                        <img class="profile_picture" src="assets/images/decorations/profile_picture.webp" alt="Photo de profil" draggable="false">
+                        <h2>Laury THIALLIER</h2>
+                        <h3>Développeuse front-end</h3>
+                        <p>KARTE BLANCHE • OpenClassrooms</p>
+                        <p class="location">Vichy, Auvergne-Rhône-Alpes, France</p>
+                        <p class="relations">Plus de 500 relations</p>
+                        <div class="buttons">
+                            <a class="buttons__contact" href="https://www.linkedin.com/in/laury-t/" target="_blank"><p>Se connecter</p></a>
+                            <a class="buttons__message" href="https://www.linkedin.com/in/laury-t/" target="_blank"><p>Message</p></a>
+                        </div>
+                    </div>
+                    <div class="experience">
+                        <h3 class="title">Expérience</h3>
+                        <div>
+                            <div class="job">
+                                <img src="assets/images/decorations/karte_blanche.webp" alt="Karte Blanche">
+                                <div class="job__infos">
+                                    <h3 class="name">Développeuse web</h3>
+                                    <h4 class="company">KARTE BLANCHE • Contrat en alternance</h4>
+                                    <p class="date">sept. 2021 - aujourd’hui • 6 mois</p>
+                                    <p class="location">Vichy, Auvergne-Rhône-Alpes, France</p>
+                                    <ul class="description">
+                                        <li>Conception de sites Internet from scratch et via WordPress</li>
+                                        <li>Création de maquettes de sites web via Adobe XD et Figma</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="job">
+                                <img src="assets/images/decorations/meyrieux-trouet.webp" alt="Meyrieux-Trouet">
+                                <div class="job__infos">
+                                    <h3 class="name">Développeuse web</h3>
+                                    <h4 class="company">Mairie de Meyrieux-Trouet • Stage</h4>
+                                    <p class="date">janv. 2021 - févr. 2021 • 2 mois</p>
+                                    <p class="location">Meyrieux-Trouet, Auvergne-Rhône-Alpes, France</p>
+                                    <ul class="description">
+                                        <li>Création du site Internet de la commune de Meyrieux-Trouet via WordPress</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="job">
+                                <img src="assets/images/decorations/elonico_informatique.webp" alt="Elonico Informatique" loading="lazy">
+                                <div class="job__infos">
+                                    <h3 class="name">Technicienne de maintenance en informatique</h3>
+                                    <h4 class="company">ELONICO INFORMATIQUE • Stage</h4>
+                                    <p class="date">déc. 2018 - févr. 2019 • 3 mois</p>
+                                    <p class="location">Firminy, Auvergne-Rhône-Alpes, France</p>
+                                    <ul class="description">
+                                        <li>Démontage, montage, débugage, réparation et préparation de PC, de Mac, de tablettes et d'imprimantes pour des particuliers et des professionnels</li>
+                                        <li>Management d'une équipe de stagiaires</li>
+                                        <li>Prise en charge et gestion de la clientèle</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="job">
+                                <img src="assets/images/decorations/sylvain_roche_informatique.webp" alt="Sylvain Roche Informatique" loading="lazy">
+                                <div class="job__infos">
+                                    <h3 class="name">Technicienne de maintenance en informatique</h3>
+                                    <h4 class="company">SYLVAIN ROCHE INFORMATIQUE • Stage</h4>
+                                    <p class="date">avr. 2018 - mai 2018 • 2 mois</p>
+                                    <p class="location">Saint-Just-Saint-Rambert, Auvergne-Rhône-Alpes, France</p>
+                                    <ul class="description">
+                                        <li>Démontage, montage, débugage, réparation et préparation de PC pour des particuliers</li>
+                                        <li>Gestion de la clientèle et du point relais</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="job">
+                                <img src="assets/images/decorations/teissier.webp" alt="Teissier" loading="lazy">
+                                <div class="job__infos">
+                                    <h3 class="name">Technicienne de maintenance en informatique</h3>
+                                    <h4 class="company">Teissier • Stage</h4>
+                                    <p class="date">déc. 2017 - janv. 2018 • 2 mois</p>
+                                    <p class="location">Saint-Étienne, Auvergne-Rhône-Alpes, France</p>
+                                    <ul class="description">
+                                        <li>Préparation de 81 PC portables et de 34 tablettes pour les employés de l'entreprise</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="job">
+                                <img src="assets/images/decorations/psai_informatique.webp" alt="PSAI Informatique" loading="lazy">
+                                <div class="job__infos">
+                                    <h3 class="name">Technicienne de maintenance en informatique</h3>
+                                    <h4 class="company">PSAI Informatique • Stage</h4>
+                                    <p class="date">mai 2017 - juin 2017 • 2 mois</p>
+                                    <p class="location">Monistrol-sur-Loire, Auvergne-Rhône-Alpes, France</p>
+                                    <ul class="description">
+                                        <li>Démontage, montage, débugage, réparation et préparation de PC pour des particuliers</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="job">
+                                <img src="assets/images/decorations/merten_consultants.webp" alt="Merten Consultants" loading="lazy">
+                                <div class="job__infos">
+                                    <h3 class="name">Technicienne de maintenance en informatique</h3>
+                                    <h4 class="company">Merten Consultants • Stage</h4>
+                                    <p class="date">mars 2017 • 1 mois</p>
+                                    <p class="location">Firminy, Auvergne-Rhône-Alpes, France</p>
+                                    <ul class="description">
+                                        <li>Démontage, montage, débugage, réparation et préparation de PC, de Mac, de tablettes et d'imprimantes pour des particuliers et des professionnels</li>
+                                        <li>Gestion des livraisons</li>
+                                        <li>Formation d'un client à l'informatique</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience">
+                        <h3 class="title">Formation</h3>
+                        <div>
+                            <div class="formation">
+                                <img src="assets/images/decorations/openclassrooms.webp" alt="OpenClassrooms" loading="lazy">
+                                <div class="formation__infos">
+                                    <h3 class="name">OpenClassrooms</h3>
+                                    <h4 class="degree">Titre professionnel (TP) de niveau 6, Développeur Front-end en alternance</h4>
+                                    <p class="date">2021 - 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div>
+                            <div class="formation">
+                                <img src="assets/images/decorations/la_chartreuse_paradis.webp" alt="La Chartreuse Paradis" loading="lazy">
+                                <div class="formation__infos">
+                                    <h3 class="name">Lycée privé La Chartreuse Paradis</h3>
+                                    <h4 class="degree">Formation Brevet de Technicien Supérieur (BTS), Services Informatiques aux Organisations (SLAM)</h4>
+                                    <p class="date">2019 - 2021</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div>
+                            <div class="formation">
+                                <img src="assets/images/decorations/le_marais_sainte-therese.webp" alt="Le Marais Sainte-Thérèse" loading="lazy">
+                                <div class="formation__infos">
+                                    <h3 class="name">Lycée professionnel privé Le Marais Sainte-Thérèse</h3>
+                                    <h4 class="degree">Obtention Baccalauréat professionnel Systèmes Numériques (SN) mention bien</h4>
+                                    <p class="date">2016 - 2019</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience mobile_experience">
+                        <h3 class="title">Licences et certifications</h3>
+                        <div>
+                            <div class="licence">
+                                <img src="assets/images/decorations/toeic.webp" alt="TOEIC" loading="lazy">
+                                <div class="licence__infos">
+                                    <h3 class="name">TOEIC – Score : 875 / 990</h3>
+                                    <h4 class="degree">The TOEIC® Program</h4>
+                                    <p class="date">Émise le mars 2021 • Expire le mars 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div>
+                            <div class="licence">
+                                <img src="assets/images/decorations/sst.webp" alt="Sauveteur Secouriste du Travail" loading="lazy">
+                                <div class="licence__infos">
+                                    <h3 class="name">Sauveteur Secouriste du Travail</h3>
+                                    <h4 class="degree">Lycée professionnel privé Le Marais Sainte-Thérèse</h4>
+                                    <p class="date">Émise le mars 2018 • Expire le mars 2020</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="linkedin__navbar"></div>
+            </section>
+
+            <!-- STEAM (PROFIL) -->
+            
+            <section class="steam">
+                <div class="steam__statusbar"></div>
+                <div class="steam__title">
+                    <img id="steamBackToHome" src="assets/images/icons/arrow.svg" alt="Retour">
+                    <h2>Profil</h2>
+                </div>
+                <div class="steam__background">
+                    <h2>Laury THIALLIER</h2>
+                    <div class="location">
+                        <img src="assets/images/icons/france.svg" alt="France">
+                        <p>Auvergne-Rhône-Alpes, France</p>
+                    </div>
+                    <div class="infos">
+                        <img class="profile_picture" src="assets/images/decorations/profile_picture.webp" alt="Photo de profil">
+                        <div class="badge_level">
+                            <p class="level" >Niveau <span>21</span></p>
+                            <div class="badge">
+                                <img src="assets/images/decorations/code.svg" alt="Badge">
+                                <div>
+                                    <h3>Développeuse front-end</h3>
+                                    <p>100 XP</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="description">
+                        Je suis à la recherche d'une entreprise pouvant m’accueillir à partir de septembre 2022 pour terminer ma formation en développement front-end pendant 12 mois. 
+                        Mon rythme d'alternance est de 3 jours en entreprise et 2 jours en formation.
+                    </p>
+                    <div class="status">
+                        <p>Actuellement hors ligne</p>
+                    </div>
+                    <div class="badges">
+                        <h6>Badges</h6>
+                        <div class="badges_icons">
+                            <img src="assets/images/icons/html5.svg" alt="HTML5" draggable="false">
+                            <img src="assets/images/icons/css.svg" alt="CSS3" draggable="false">
+                            <img src="assets/images/icons/js.svg" alt="JavaScript" draggable="false">
+                            <img src="assets/images/icons/sql.svg" alt="SQL" draggable="false">
+                            <img src="assets/images/icons/bootstrap.svg" alt="Bootstrap" draggable="false">
+                            <img src="assets/images/icons/wordpress.svg" alt="WordPress" draggable="false">
+                            <img src="assets/images/icons/figma.svg" alt="Figma" draggable="false">
+                            <img src="assets/images/icons/photoshop.svg" alt="Photoshop" draggable="false">
+                            <img src="assets/images/icons/xd.svg" alt="Adobe XD" draggable="false">
+                            <img src="assets/images/icons/illustrator.svg" alt="Adobe Illustrator" draggable="false">
+                            <img src="assets/images/icons/git_github.svg" alt="GitHub" draggable="false">
+                            <img src="assets/images/icons/maintenance.svg" alt="Maintenance informatique" draggable="false">
+                            <img src="assets/images/icons/prestashop.svg" alt="PrestaShop" draggable="false">
+                            <img src="assets/images/icons/sass.svg" alt="Sass" draggable="false">
+                        </div>
+                    </div>
+                    <div class="games">
+                        <h6>Jeux</h6>
+                        <div class="games_icons">
+                            <img src="assets/images/decorations/vscode.webp" alt="Visual Studio Code" draggable="false">
+                            <img src="assets/images/decorations/trello.webp" alt="Trello" draggable="false">
+                        </div>
+                    </div>
+                </div>
+                <div class="steam__navbar"></div>
+            </section>
+
+            <!-- GALERIE (HOBBIES) -->
+            
+            <section class="gallery">
+                <div class="gallery__statusbar"></div>
+                <div class="gallery__title">
+                    <img id="galleryBackToHome" src="assets/images/icons/arrow.svg" alt="Retour">
+                    <h2>Hobbies</h2>
+                </div>
+                <div class="gallery__background">
+                    <div class="grid">
+                        <img class="picture" src="assets/images/decorations/board_game1.webp" alt="Jeu de société" draggable="false">
+                        <img class="picture" src="assets/images/decorations/cat1.webp" alt="Chats" draggable="false">
+                        <img class="picture" src="assets/images/decorations/hardware1.webp" alt="Hardware" draggable="false">
+                        <img class="picture" src="assets/images/decorations/board_game2.webp" alt="Jeu de société" draggable="false">
+                        <img class="picture" src="assets/images/decorations/video_game1.webp" alt="Jeu vidéo" draggable="false">
+                        <img class="picture" src="assets/images/decorations/tiger.webp" alt="Tigre" draggable="false">
+                        <img class="picture" src="assets/images/decorations/cat2.webp" alt="Chats" draggable="false">
+                        <img class="picture" src="assets/images/decorations/board_game3.webp" alt="Jeu de société" draggable="false">
+                        <img class="picture" src="assets/images/decorations/hardware2.webp" alt="Hardware" draggable="false">
+                        <img class="picture" src="assets/images/decorations/video_game3.webp" alt="Jeu vidéo" draggable="false">
+                        <img class="picture" src="assets/images/decorations/cat4.webp" alt="Chat" draggable="false">
+                    </div>
+                </div>
+                <div class="gallery__navbar"></div>
+            </section>
+
+            <!-- GALERIE (HOBBIES ZOOM) -->
+            
+            <section class="gallery_zoom" id="gallery_zoom">
+                <div class="gallery_zoom__statusbar"></div>
+                <div class="gallery_zoom__title">
+                    <img id="galleryBack" src="assets/images/icons/arrow.svg" alt="Retour">
+                    <h2>Hobbies</h2>
+                </div>
+                <div class="gallery_zoom__background" id="gallery_zoom__background">
+                    
+                </div>
+                <div class="gallery_zoom__navbar"></div>
+            </section>
+
+            <!-- MUSIQUE -->
+
+            <section class="music">
+                <div class="music__statusbar"></div>
+                <div class="music__title">
+                    <img id="musicBackToHome" src="assets/images/icons/arrow.svg" alt="Retour">
+                    <h2>Musique</h2>
+                </div>
+                <div class="music__background">
+                   <div class="musics">
+                       <div class="music_line">
+                           <div class="album_title">
+                                <img class="album" src="assets/images/decorations/bea_miller_-_playground.webp" alt="Pochette album">
+                                <div class="infos">
+                                    <h6 class="title">Bea Miller - Playground</h6>
+                                    <p class="time">3:50</p>
+                                </div>
+                            </div>
+                            <img class="play_pause" src="assets/images/icons/play.svg" alt="Play">
+                            <audio src="assets/musics/bea_miller_-_playground.mp3" preload="none"></audio>
+                       </div>
+                       <hr>
+                       <div class="music_line">
+                           <div class="album_title">
+                                <img class="album" src="assets/images/decorations/daft_punk_-_contact.webp" alt="Pochette album">
+                                <div class="infos">
+                                    <h6 class="title">Daft Punk - Contact</h6>
+                                    <p class="time">6:22</p>
+                                </div>
+                            </div>
+                            <img class="play_pause" src="assets/images/icons/play.svg" alt="Play">
+                            <audio src="assets/musics/daft_punk_-_contact.mp3" preload="none"></audio>
+                       </div>
+                       <hr>
+                       <div class="music_line">
+                           <div class="album_title">
+                                <img class="album" src="assets/images/decorations/daft_punk_-_veridis_quo.webp" alt="Pochette album">
+                                <div class="infos">
+                                    <h6 class="title">Daft Punk - Veridis Quo</h6>
+                                    <p class="time">5:45</p>
+                                </div>
+                            </div>
+                            <img class="play_pause" src="assets/images/icons/play.svg" alt="Play">
+                            <audio src="assets/musics/daft_punk_-_veridis_quo.mp3" preload="none"></audio>
+                       </div>
+                       <hr>
+                       <div class="music_line">
+                           <div class="album_title">
+                                <img class="album" src="assets/images/decorations/deadmau5_-_some_chords.webp" alt="Pochette album">
+                                <div class="infos">
+                                    <h6 class="title">Deadmau5 - Some Chords</h6>
+                                    <p class="time">3:44</p>
+                                </div>
+                            </div>
+                            <img class="play_pause" src="assets/images/icons/play.svg" alt="Play">
+                            <audio src="assets/musics/deadmau5_-_some_chords.mp3" preload="none"></audio>
+                       </div>
+                       <hr>
+                       <div class="music_line">
+                           <div class="album_title">
+                                <img class="album" src="assets/images/decorations/deadmau5_-_strobe.webp" alt="Pochette album">
+                                <div class="infos">
+                                    <h6 class="title">Deadmau5 - Strobe</h6>
+                                    <p class="time">10:37</p>
+                                </div>
+                            </div>
+                            <img class="play_pause" src="assets/images/icons/play.svg" alt="Play">
+                            <audio src="assets/musics/deadmau5_-_strobe.mp3" preload="none"></audio>
+                       </div>
+                       <hr>
+                       <div class="music_line">
+                           <div class="album_title">
+                                <img class="album" src="assets/images/decorations/faunts_-_m4_ptii.webp" alt="Pochette album">
+                                <div class="infos">
+                                    <h6 class="title">Faunts - M4, Pt. II</h6>
+                                    <p class="time">8:19</p>
+                                </div>
+                            </div>
+                            <img class="play_pause" src="assets/images/icons/play.svg" alt="Play">
+                            <audio src="assets/musics/Faunts_-_m4_pt_II.mp3" preload="none"></audio>
+                       </div>
+                       <hr>
+                       <div class="music_line">
+                           <div class="album_title">
+                                <img class="album" src="assets/images/decorations/imagine_dragons_-_enemy.webp" alt="Pochette album">
+                                <div class="infos">
+                                    <h6 class="title">Imagine Dragons - Enemy</h6>
+                                    <p class="time">2:53</p>
+                                </div>
+                            </div>
+                            <img class="play_pause" src="assets/images/icons/play.svg" alt="Play">
+                            <audio src="assets/musics/imagine_dragons_-_enemy.mp3" preload="none"></audio>
+                       </div>
+                       <hr>
+                       <div class="music_line">
+                           <div class="album_title">
+                                <img class="album" src="assets/images/decorations/imagine_dragons_-_warriors.webp" alt="Pochette album">
+                                <div class="infos">
+                                    <h6 class="title">Imagine Dragons - Warriors</h6>
+                                    <p class="time">2:47</p>
+                                </div>
+                            </div>
+                            <img class="play_pause" src="assets/images/icons/play.svg" alt="Play">
+                            <audio src="assets/musics/imagine_dragons_-_warriors.mp3" preload="none"></audio>
+                       </div>
+                       <hr>
+                       <div class="music_line">
+                           <div class="album_title">
+                                <img class="album" src="assets/images/decorations/maxence_cyrin_-_where_is_my_mind.webp" alt="Pochette album">
+                                <div class="infos">
+                                    <h6 class="title">Maxence Cyrin - Where Is My Mind</h6>
+                                    <p class="time">2:44</p>
+                                </div>
+                            </div>
+                            <img class="play_pause" src="assets/images/icons/play.svg" alt="Play">
+                            <audio src="assets/musics/maxence_cyrin_-_where_is_my_mind.mp3" preload="none"></audio>
+                       </div>
+                       <hr>
+                       <div class="music_line">
+                           <div class="album_title">
+                                <img class="album" src="assets/images/decorations/pvris-miyavi_-_snakes.webp" alt="Pochette album">
+                                <div class="infos">
+                                    <h6 class="title">PVRIS, MIYAVI - Snakes</h6>
+                                    <p class="time">2:41</p>
+                                </div>
+                            </div>
+                            <img class="play_pause" src="assets/images/icons/play.svg" alt="Play">
+                            <audio src="assets/musics/pvris_miyavi_-_snakes.mp3" preload="none"></audio>
+                       </div>
+                       <hr>
+                       <div class="music_line">
+                           <div class="album_title">
+                                <img class="album" src="assets/images/decorations/ratatat_-_cream_on_chrome.webp" alt="Pochette album">
+                                <div class="infos">
+                                    <h6 class="title">Ratatat - Cream On Chrome</h6>
+                                    <p class="time">3:55</p>
+                                </div>
+                            </div>
+                            <img class="play_pause" src="assets/images/icons/play.svg" alt="Play" loading="lazy">
+                            <audio src="assets/musics/ratatat_-_cream_on_chrome.mp3" preload="none"></audio>
+                       </div>
+                       <hr>
+                       <div class="music_line">
+                           <div class="album_title">
+                                <img class="album" src="assets/images/decorations/ratatat_-_montanita.webp" alt="Pochette album" loading="lazy">
+                                <div class="infos">
+                                    <h6 class="title">Ratatat - Montanita</h6>
+                                    <p class="time">5:00</p>
+                                </div>
+                            </div>
+                            <img class="play_pause" src="assets/images/icons/play.svg" alt="Play" loading="lazy">
+                            <audio src="assets/musics/ratatat_-_montanita.mp3" preload="none"></audio>
+                       </div>
+                       <hr>
+                       <div class="music_line">
+                           <div class="album_title">
+                                <img class="album" src="assets/images/decorations/ratatat_-_wildcat.webp" alt="Pochette album" loading="lazy">
+                                <div class="infos">
+                                    <h6 class="title">Ratatat - Wildcat</h6>
+                                    <p class="time">4:20</p>
+                                </div>
+                            </div>
+                            <img class="play_pause" src="assets/images/icons/play.svg" alt="Play" loading="lazy">
+                            <audio src="assets/musics/ratatat_-_wildcat.mp3" preload="none"></audio>
+                       </div>
+                       <hr>
+                       <div class="music_line">
+                           <div class="album_title">
+                                <img class="album" src="assets/images/decorations/red_hot_chili_peppers_-_dani_california.webp" alt="Pochette album" loading="lazy">
+                                <div class="infos">
+                                    <h6 class="title">Red Hot Chili Peppers - Dani California</h6>
+                                    <p class="time">4:47</p>
+                                </div>
+                            </div>
+                            <img class="play_pause" src="assets/images/icons/play.svg" alt="Play" loading="lazy">
+                            <audio src="assets/musics/red_hot_chili_peppers_-_dani_california.mp3" preload="none"></audio>
+                       </div>
+                       <hr>
+                       <div class="music_line">
+                           <div class="album_title">
+                                <img class="album" src="assets/images/decorations/sound_of_legend_-_maniac.webp" alt="Pochette album" loading="lazy">
+                                <div class="infos">
+                                    <h6 class="title">Sound Of Legend - Maniac</h6>
+                                    <p class="time">2:12</p>
+                                </div>
+                            </div>
+                            <img class="play_pause" src="assets/images/icons/play.svg" alt="Play" loading="lazy">
+                            <audio src="assets/musics/sound_of_legend_-_maniac.mp3" preload="none"></audio>
+                       </div>
+                       <hr>
+                       <div class="music_line">
+                           <div class="album_title">
+                                <img class="album" src="assets/images/decorations/the_black_eyed_peas_-_just_cant_get_enough.webp" alt="Pochette album" loading="lazy">
+                                <div class="infos">
+                                    <h6 class="title">The Black Eyed Peas - Just Can't Get Enough</h6>
+                                    <p class="time">3:55</p>
+                                </div>
+                            </div>
+                            <img class="play_pause" src="assets/images/icons/play.svg" alt="Play" loading="lazy">
+                            <audio src="assets/musics/the_black_eyed_peas_-_just_cant_get_enough.mp3" preload="none"></audio>
+                       </div>
+                       <hr>
+                       <div class="music_line">
+                           <div class="album_title">
+                                <img class="album" src="assets/images/decorations/the_cardigans_-_my_favourite_game.webp" alt="Pochette album" loading="lazy">
+                                <div class="infos">
+                                    <h6 class="title">The Cardigans - My Favourite Game</h6>
+                                    <p class="time">3:37</p>
+                                </div>
+                            </div>
+                            <img class="play_pause" src="assets/images/icons/play.svg" alt="Play" loading="lazy">
+                            <audio src="assets/musics/the_cardigans_-_my_favourite_game.mp3" preload="none"></audio>
+                       </div>
+                       <hr>
+                       <div class="music_line">
+                           <div class="album_title">
+                                <img class="album" src="assets/images/decorations/the_cranberries_-_zombie.webp" alt="Pochette album" loading="lazy">
+                                <div class="infos">
+                                    <h6 class="title">The Cranberries - Zombie</h6>
+                                    <p class="time">5:07</p>
+                                </div>
+                            </div>
+                            <img class="play_pause" src="assets/images/icons/play.svg" alt="Play" loading="lazy">
+                            <audio src="assets/musics/the_cranberries_-_zombie.mp3" preload="none"></audio>
+                       </div>
+                       <hr>
+                       <div class="music_line">
+                           <div class="album_title">
+                                <img class="album" src="assets/images/decorations/the_white_stripes_-_seven_nation_army.webp" alt="Pochette album" loading="lazy">
+                                <div class="infos">
+                                    <h6 class="title">The White Stripes - Seven Nation Army</h6>
+                                    <p class="time">3:51</p>
+                                </div>
+                            </div>
+                            <img class="play_pause" src="assets/images/icons/play.svg" alt="Play" loading="lazy">
+                            <audio src="assets/musics/the_white_stripes_-_seven_nation_army.mp3" preload="none"></audio>
+                       </div>
+                       <hr>
+                       <div class="music_line">
+                           <div class="album_title">
+                                <img class="album" src="assets/images/decorations/thefatrat_-_unity.webp" alt="Pochette album" loading="lazy">
+                                <div class="infos">
+                                    <h6 class="title">TheFatRat - Unity</h6>
+                                    <p class="time">4:09</p>
+                                </div>
+                            </div>
+                            <img class="play_pause" src="assets/images/icons/play.svg" alt="Play" loading="lazy">
+                            <audio src="assets/musics/thefatrat_-_unity.mp3" preload="none"></audio>
+                       </div>
+                   </div>
+                </div>
+                <div class="music__navbar"></div>
+            </section>
+
+            <!-- NETFLIX -->
+            
+            <section class="netflix">
+                <div class="netflix__statusbar"></div>
+                <div class="netflix__title">
+                    <img id="netflixBackToHome" src="assets/images/icons/arrow.svg" alt="Retour">
+                    <h2>Netflix</h2>
+                </div>
+                <div class="netflix__background">
+                    <div class="grid">
+                        <img src="assets/images/decorations/arcane.webp" alt="Arcane" draggable="false">
+                        <img src="assets/images/decorations/black_mirror.webp" alt="Black Mirror" draggable="false">
+                        <img src="assets/images/decorations/disenchantment.webp" alt="Désenchantée" draggable="false">
+                        <img src="assets/images/decorations/love_death_and_robot.webp" alt="Love Death and Robot" draggable="false">
+                        <img src="assets/images/decorations/mr_robot.webp" alt="Mr Robot" draggable="false">
+                        <img src="assets/images/decorations/rick_and_morty.webp" alt="Rick et Morty" draggable="false">
+                        <img src="assets/images/decorations/stranger_things.webp" alt="Stranger Things" draggable="false">
+                        <img src="assets/images/decorations/the_umbrella_academy.webp" alt="The Umbrella Academy" draggable="false">
+                        <img src="assets/images/decorations/the_witcher.webp" alt="The Witcher" draggable="false">
+                    </div>
+                </div>
+                <div class="netflix__navbar"></div>
+            </section>
+
+            <!-- CALCULATRICE -->
+            
+            <section class="calculator">
+                <div class="calculator__statusbar"></div>
+                <div class="calculator__title">
+                    <img id="calculatorBackToHome" src="assets/images/icons/arrow.svg" alt="Retour">
+                    <h2>Calculatrice</h2>
+                </div>
+                <div class="calculator__background">
+                    <div id="output"></div>
+                    <div class="grid">
+                        <button value="7" onclick='showValue(this)'>7</button>
+                        <button value="8" onclick='showValue(this)'>8</button>
+                        <button value="9" onclick='showValue(this)'>9</button>
+                        <button class="blue" value="/" onclick='showValue(this)'>÷</button>
+                        <button class="blue" onclick='rem1()'><img src="assets/images/icons/calculator_delete.svg" alt="Supprimer"></button>
+                        <button value="4" onclick='showValue(this)'>4</button>
+                        <button value="5" onclick='showValue(this)'>5</button>
+                        <button value="6" onclick='showValue(this)'>6</button>
+                        <button class="blue" value="*" onclick='showValue(this)'>×</button>
+                        <button class="blue deleteC" onclick='reset()'>C</button>
+                        <button value="1" onclick='showValue(this)'>1</button>
+                        <button value="2" onclick='showValue(this)'>2</button>
+                        <button value="3" onclick='showValue(this)'>3</button>
+                        <button class="blue" value="-" onclick='showValue(this)'>-</button>
+                        <button class="void"></button>
+                        <button value="0" onclick='showValue(this)'>0</button>
+                        <button value="." onclick='showValue(this)'>,</button>
+                        <button class="void"></button>
+                        <button class="blue" value="+" onclick='showValue(this)'>+</button>
+                        <button class="blue" onclick='doMath()'>=</button>
+                    </div>
+                </div>
+                <div class="calculator__navbar"></div>
+            </section>
+
+            <!-- DASHLANE -->
+            
+            <section class="dashlane">
+                <div class="dashlane__statusbar"></div>
+                <div class="darken">
+                    <div class="dashlane__title">
+                        <img id="dashlaneBackToHome" src="assets/images/icons/arrow.svg" alt="Retour">
+                        <h2>Dashlane</h2>
+                    </div>
+                    <div class="dashlane__background">
+                        <div class="unlock_messages">
+                            <p class="first_unlock">Déverrouillage par authentification biométrique</p>
+                            <p class="first_mail">laury.thiallier@gmail.com</p>
+                        </div>  
+                        <div class="authentification">
+                            <p class="second_unlock">Déverrouiller Dashlane avec l'authentification biométrique</p>
+                            <p class="second_mail">laury.thiallier@gmail.com</p>
+                            <div class="biometric">
+                                <img src="assets/images/icons/biometric.svg" alt="Authentification biométrique">
+                                <p class="press">Appuyez sur le lecteur d'empreinte digitale</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashlane__navbar"></div>
+            </section>
+
+            <!-- NOTES -->
+            
+            <section class="notes">
+                <div class="notes__statusbar"></div>
+                <div class="notes__title">
+                    <img id="notesBackToHome" src="assets/images/icons/arrow.svg" alt="Retour">
+                    <h2>Notes</h2>
+                </div>
+                <div class="notes__background">
+                    <div class="first_column">
+                        <div class="note">
+                            <h4 class="title">Liste de courses</h4>
+                            <ul class="content">
+                                <li>Lait</li>
+                                <li>Céréales</li>
+                                <li>Gnocchis</li>
+                                <li>Pâtes</li>
+                                <li>Pesto</li>
+                                <li>Haricots</li>
+                            </ul>
+                        </div>
+                        <div class="note">
+                            <h4 class="title">Anniversaires</h4>
+                            <p class="content">
+                                Riana : 14 février<br>
+                                Mamy M : 9 mars<br>
+                                Kate : 5 mai<br>
+                                Raphaël : 28 mai<br>
+                                Papy D : 1 juin<br>
+                                Mamy J : 30 juin<br>
+                                Emrys : 22 août<br>
+                                Pyrène : 13 septembre<br>
+                                Morgan : 7 novembre<br>  
+                                Bertrand : 26 novembre        
+                            </p>
+                        </div>
+                    </div>
+                    <div class="second_column">
+                        <div class="note">
+                            <h4 class="title">Sport</h4>
+                            <p class="content">
+                                Vélo : 10"30' - 2 km - 34 cal<br>
+                                Pompes : 10<br>
+                                Squats : 30<br>
+                                Gainage : 3"30'
+                            </p>
+                        </div>
+                        <div class="note">
+                            <h4 class="title">Jeux de société</h4>
+                            <ul class="content">
+                                <li>Code Names</li>
+                                <li>Magic Maze</li>
+                                <li>Mito</li>
+                                <li>Mots Malins</li>
+                                <li>Mow</li>
+                                <li>Mysterium</li>
+                                <li>Oriflamme</li>
+                                <li>The Game</li>
+                                <li>Unlock!</li>
+                                <li>Wingspan</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="notes__navbar"></div>
+            </section>
+
+            <!-- GMAIL -->
+            
+            <section class="gmail">
+                <div class="gmail__statusbar"></div>
+                <div class="gmail__title">
+                    <div>
+                        <img id="gmailBackToHome" src="assets/images/icons/arrow.svg" alt="Retour">
+                        <h2>Nouveau message</h2>
+                    </div>
+                </div>
+                <div class="gmail__background">
+                    <form action="assets/php/form.php" method="POST">
+                        <div>
+                            <label for="mail">De</label>
+                            <input type="mail" name="mail" id="mail">
+                        </div>
+                        <hr>
+                        <div>
+                            <label for="my_mail">À</label>
+                            <input type="mail" name="my_mail" id="my_mail" placeholder="laury.thiallier@gmail.com" disabled>
+                        </div>
+                        <hr>  
+                        <input type="text" name="object" id="object" placeholder="Objet">
+                        <hr>
+                        <textarea name="message" id="message" placeholder="Rédigez votre message"></textarea>
+                        <button><img id="send" src="assets/images/icons/send.svg" alt="Envoyer"></button>
+                    </form>
+                </div>
+                <div class="gmail__navbar"></div>
+            </section>
+
+            <!-- MESSAGES -->
+            
+            <section class="messages">
+                <div class="messages__statusbar"></div>
+                <div class="messages__title">
+                    <img id="messagesBackToHome" src="assets/images/icons/arrow.svg" alt="Retour">
+                    <h2>Messages</h2>
+                </div>
+                <div class="messages__background">
+                    <div class="sms_container">
+                        <div class="sms">
+                            <div class="profil_picture pink">
+                                <p>R</p>
+                            </div>
+                            <div class="infos">
+                                <p>Riana</p>
+                                <p>Je devrais être dispo vers 21h</p>
+                            </div>
+                        </div>
+                        <div class="sms">
+                            <div class="profil_picture red">
+                                <p>M</p>
+                            </div>
+                            <div class="infos">
+                                <p class="name">Mamy M</p>
+                                <p>Bonne journée ma puce. Bisou</p>
+                            </div>
+                        </div>
+                        <div class="sms">
+                            <div class="profil_picture blue">
+                                <p>K</p>
+                            </div>
+                            <div class="infos">
+                                <p class="name">Kate</p>
+                                <p>J'ai pas de bus demain</p>
+                            </div>
+                        </div>
+                        <div class="sms">
+                            <div class="profil_picture orange">
+                                <p>M</p>
+                            </div>
+                            <div class="infos">
+                                <p class="name">Morgan</p>
+                                <p>Vous : Y'a des chances oui</p>
+                            </div>
+                        </div>
+                        <div class="sms">
+                            <div class="profil_picture pink">
+                                <p>M</p>
+                            </div>
+                            <div class="infos">
+                                <p class="name">Maman</p>
+                                <p>Vous : Ça marche</p>
+                            </div>
+                        </div>
+                        <div class="sms">
+                            <div class="profil_picture yellow">
+                                <p>B</p>
+                            </div>
+                            <div class="infos">
+                                <p class="name">Babette</p>
+                                <p>Tant pis ! Gros Bisous !</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="messages__navbar"></div>
+            </section>
+
+
+            <!-- NAVBAR -->
+
+            <div class="navbar">
+                <img src="assets/images/icons/rectangle.svg" height="18px" width="16px" draggable="false">
+                <img class="button" id="circle" src="assets/images/icons/circle.svg" height="18px" width="17px" draggable="false">
+                <img class="button" id="triangle" src="assets/images/icons/triangle.svg" height="17px" width="16px" draggable="false">
+            </div>
+        </div>
+
+        <script src="assets/scripts/main.js" defer></script>
+        <script src="assets/scripts/sections/home.js" defer></script>
+        <script src="assets/scripts/sections/trello.js" defer type="module" defer></script>
+        <script src="assets/scripts/sections/linkedin.js" defer></script>
+        <script src="assets/scripts/sections/steam.js" defer></script>
+        <script src="assets/scripts/sections/gallery.js" defer></script>
+        <script src="assets/scripts/sections/music.js" defer></script>
+        <script src="assets/scripts/sections/netflix.js" defer></script>
+        <script src="assets/scripts/sections/calculator.js" defer></script>
+        <script src="assets/scripts/sections/dashlane.js" defer></script>
+        <script src="assets/scripts/sections/notes.js" defer></script>
+        <script src="assets/scripts/sections/gmail.js" defer></script>
+        <script src="assets/scripts/sections/messages.js" defer></script>
+    </body>
+</html>

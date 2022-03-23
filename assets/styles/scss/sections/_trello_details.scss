@@ -1,0 +1,119 @@
+.trello_details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  #project_details {
+    display: none;
+  }
+  &__statusbar {
+    background-color: #003060;
+    height: 33px;
+  }
+  &__title {
+    background-color: #00407e;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    img {
+      height: 30px;
+      margin-left: 15px;
+      cursor: pointer;
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 400;
+      color: white;
+      margin-left: 20px;
+    }
+  }
+  &__background {
+    background-color: #2c2c2c;
+    height: 715px;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    img.project {
+      width: 100%;
+      height: 219px;
+    }
+    h6 {
+      font-size: 18px;
+      font-weight: 500;
+      margin: 20px 0 20px 20px;
+    }
+    .description {
+      display: flex;
+      img {
+        height: 30px;
+        margin-left: 20px;
+      }
+      p {
+        font-size: 14px;
+        margin: 3px 10px 0 10px;
+        a {
+          display: inline;
+          color: white;
+        }
+      }
+    }
+    .badges {
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      margin-left: 20px;
+      margin-top: 20px;
+      img {
+        height: 30px;
+      }
+      p {
+        padding: 3px;
+        border-radius: 3px;
+        margin-left: 10px;
+      }
+      .html {
+        background-color: #f16529;
+      }
+      .css {
+        background-color: #2a64f1;
+      }
+      .scss {
+        background-color: #cc6798;
+      }
+      .bootstrap {
+        background-color: #593688;
+      }
+      .javascript {
+        background-color: #ffda3e;
+      }
+      .wordpress {
+        background-color: #0087be;
+      }
+      .php {
+        background-color: #767bb2;
+      }
+      .sql {
+        background-color: #222222;
+      }
+    }
+  }
+  &__navbar {
+    background-color: #004972;
+    height: 46px;
+  }
+}
+
+@media screen and (max-height: 845px) {
+  .trello_details {
+    max-height: 100%;
+    &__background {
+      height: 100vh;
+    }
+    &__navbar {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+}

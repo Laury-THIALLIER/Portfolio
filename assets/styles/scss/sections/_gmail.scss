@@ -1,0 +1,127 @@
+.gmail {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #ffffff;
+  &__statusbar {
+    background-color: #1f1f1f;
+    height: 33px;
+  }
+  &__title {
+    background-color: #1f1f1f;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    div {
+      display: flex;
+      align-items: center;
+      img {
+        height: 30px;
+        margin-left: 15px;
+        cursor: pointer;
+      }
+      h2 {
+        font-size: 20px;
+        font-weight: 400;
+        color: white;
+        margin-left: 20px;
+      }
+    }
+    #send {
+      margin-right: 15px;
+      cursor: pointer;
+    }
+  }
+  &__background {
+    background-color: #1f1f1f;
+    height: 685px;
+    padding: 15px;
+    form {
+      display: flex;
+      flex-direction: column;
+      div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        input {
+          height: 40px;
+          width: 330px;
+        }
+      }
+      button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        height: 24px;
+        width: 24px;
+        position: absolute;
+        right: 25px;
+        top: 48px;
+      }
+      label {
+        color: #c5c7c6;
+      }
+      input {
+        height: 40px;
+        width: 352px;
+        background-color: #00000000;
+        border: none;
+        color: #ffffff;
+        font-size: 16px;
+        &::placeholder {
+          font-size: 16px;
+          color: #ffffff;
+        }
+        &#object {
+          padding: 0;
+          &::placeholder {
+            color: #c5c7c6;
+          }
+        }
+      }
+      textarea {
+        width: 353px;
+        height: 480px;
+        resize: none;
+        background-color: #00000000;
+        border: none;
+        color: #ffffff;
+        font-size: 16px;
+        margin-top: 15px;
+        padding: 0;
+        &::placeholder {
+          font-size: 16px;
+          color: #c5c7c6;
+        }
+      }
+      hr {
+        width: 150%;
+        margin-left: -50px;
+        height: 0.1px;
+        border-color: #626264;
+      }
+    }
+  }
+  &__navbar {
+    background-color: #2e2f33;
+    height: 46px;
+  }
+}
+
+@media screen and (max-height: 845px) {
+  .gmail {
+    max-height: 100%;
+    &__background {
+      height: 100vh;
+    }
+    &__navbar {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+}

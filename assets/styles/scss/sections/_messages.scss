@@ -1,0 +1,109 @@
+.messages {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #ffffff;
+  &__statusbar {
+    background-color: #202125;
+    height: 33px;
+  }
+  &__title {
+    background-color: #202125;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    img {
+      height: 30px;
+      margin-left: 15px;
+      cursor: pointer;
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 400;
+      color: white;
+      margin-left: 20px;
+    }
+  }
+  &__background {
+    background-color: #202125;
+    height: 695px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    .sms_container {
+      margin-top: -10px;
+      .sms {
+        display: flex;
+        margin: 20px 0;
+        p {
+          margin: 0;
+          cursor: default;
+        }
+        .profil_picture {
+          height: 40px;
+          width: 40px;
+          border-radius: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 18px;
+          color: #202125;
+          font-size: 22px;
+          &.pink {
+            background-color: #ff63b7;
+          }
+          &.red {
+            background-color: #ed675c;
+          }
+          &.yellow {
+            background-color: #fcc834;
+          }
+          &.blue {
+            background-color: #4dcde6;
+          }
+          &.orange {
+            background-color: #fa8f3d;
+          }
+        }
+        .infos {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          p:first-child {
+            font-size: 14px;
+            font-weight: 500;
+            margin: 2px 0;
+          }
+          p:last-child {
+            font-size: 13px;
+            font-weight: 400;
+            color: #a9aaae;
+            margin: 2px 0;
+          }
+        }
+      }
+    }
+  }
+  &__navbar {
+    background-color: #2e2f33;
+    height: 46px;
+  }
+}
+
+@media screen and (max-height: 845px) {
+  .messages {
+    max-height: 100%;
+    &__background {
+      height: 100vh;
+    }
+    &__navbar {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+}

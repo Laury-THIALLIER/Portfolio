@@ -1,0 +1,94 @@
+.dashlane {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #ffffff;
+  &__statusbar {
+    background-color: #0e353d;
+    height: 33px;
+  }
+  &__title {
+    background-color: #0e353d;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    img {
+      height: 30px;
+      margin-left: 15px;
+      cursor: pointer;
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 400;
+      color: white;
+      margin-left: 20px;
+    }
+  }
+  &__background {
+    background-color: #0d262c;
+    height: 715px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .first_unlock {
+      font-size: 20px;
+      font-weight: 500;
+      margin: 20px 15px;
+      opacity: 50%;
+    }
+    .first_mail {
+      opacity: 50%;
+      margin: 20px 15px;
+    }
+    .authentification {
+      background-color: #000000;
+      margin: 5px;
+      .second_unlock {
+        font-size: 20px;
+        margin: 20px 0 10px 25px;
+      }
+      .second_mail {
+        font-size: 15px;
+        margin: 15px 0 10px 25px;
+      }
+      .biometric {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+          height: 50px;
+          margin: 50px 0 10px 0;
+        }
+        p {
+          opacity: 50%;
+          font-size: 12px;
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+  &__navbar {
+    background-color: #282828;
+    height: 46px;
+  }
+}
+
+@media screen and (max-height: 845px) {
+  .dashlane {
+    max-height: 100%;
+    &__background {
+      height: 100vh;
+      .authentification {
+        margin-bottom: 130px;
+      }
+    }
+    &__navbar {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+}

@@ -1,0 +1,169 @@
+{
+	"projects": [
+        {
+			"id": 1,
+			"image": "le_monde_du_jeu.webp",
+			"name": "Le Monde du Jeu",
+			"date": "Mai 2020",
+            "context": "BTS SIO",
+			"description": "Site web créé from scratch comme projet de fin de formation. Seule une base de données et une interface administrateur pour la gérer étaient demandées. Le thème était libre.",
+            "link": "https://lemondedujeu.laurythiallier.fr/",
+            "github": "https://github.com/Laury-THIALLIER/Le-Monde-du-Jeu",
+			"techno": "HTML&emsp;CSS&emsp;Bootstrap&emsp;PHP&emsp;SQL"
+		},
+        {
+			"id": 2,
+			"image": "meyrieux-trouet.webp",
+			"name": "Meyrieux-Trouet",
+			"date": "Janvier 2021",
+            "context": "Stage",
+			"description": "Site web créé via WordPress pour une mairie en Savoie, il devait comprendre beaucoup de contenu mais rester simple pour que les habitants puissent accéder rapidement à ce qu'ils cherchent. Une nouveau design a été pensé depuis et devrait être mis en place sous peu.",
+            "link": "https://meyrieux-trouet.fr/",
+            "github": "",
+			"techno": "WordPress"
+		},
+        {
+			"id": 3,
+			"image": "pyrene_immo.webp",
+			"name": "Pyrène Immo",
+			"date": "Août 2021",
+            "context": "Projet payé",
+			"description": "Site web créé from scratch à partir de la maquette d'un étudiant en design pour une agente en immobilier.",
+            "link": "https://pyreneimmo.fr/",
+            "github": "https://github.com/Laury-THIALLIER/Pyrene_PERRAD",
+			"techno": "HTML&emsp;CSS&emsp;PHP"
+		},
+        {
+			"id": 4,
+			"image": "izimenu.webp",
+			"name": "Izimenu",
+			"date": "Septembre 2021",
+            "context": "Karte Blanche",
+			"description": "One page créée from scratch pour mettre en avant une solution connectée de l'agence.",
+            "link": "https://izimenu.laurythiallier.fr/",
+            "github": "https://github.com/Laury-THIALLIER/Izimenu",
+			"techno": "HTML&emsp;CSS"
+		},
+        {
+			"id": 5,
+			"image": "reservia.webp",
+			"name": "Réservia",
+			"date": "Octobre 2021",
+            "context": "OpenClassrooms",
+			"description": "Page créée from scratch durant ma formation. L'objectif était d'intégrer cette page à partir d'une maquette en HTML / CSS uniquement.",
+            "link": "https://reservia.laurythiallier.fr/",
+            "github": "https://github.com/Laury-THIALLIER/LauryTHIALLIER_2_09092021",
+			"techno": "HTML&emsp;CSS"
+		},
+        {
+			"id": 6,
+			"image": "csm_btp.webp",
+			"name": "CSM BTP",
+			"date": "Octobre 2021",
+            "context": "Karte Blanche",
+			"description": "One page créée via WordPress pour une entreprise de BTP.",
+            "link": "https://csm-btp03.fr/",
+            "github": "",
+			"techno": "WordPress&emsp;HTML&emsp;CSS"
+		},
+        {
+			"id": 7,
+			"image": "high_et_fines_herbes.webp",
+			"name": "High & Fines Herbes",
+			"date": "Octobre 2021",
+            "context": "Karte Blanche",
+			"description": "Landing page créée from scratch pour une entreprise de CBD.",
+            "link": "https://highetfinesherbes.eu/",
+            "github": "https://github.com/Laury-THIALLIER/High-et-Fines-Herbes",
+			"techno": "HTML&emsp;CSS"
+		},
+        {
+			"id": 8,
+			"image": "ohmyfood.webp",
+			"name": "Ohmyfood",
+			"date": "Octobre 2021",
+            "context": "OpenClassrooms",
+			"description": "Site web créé from scratch en mobile first durant ma formation. L'objectif était d'intégrer plusieurs pages à partir de maquettes uniquement en HTML / SASS. Plusieurs animations étaient aussi à créer.",
+            "link": "https://ohmyfood.laurythiallier.fr",
+            "github": "https://github.com/Laury-THIALLIER/LauryTHIALLIER_3_08102021",
+			"techno": "HTML&emsp;SCSS"
+		},
+		{
+			"id": 9,
+			"image": "sabine_lassalle.webp",
+			"name": "Sabine Lassalle",
+			"date": "Novembre 2021",
+            "context": "Karte Blanche",
+			"description": "Site web créé via WordPress pour une naturopathe.",
+            "link": "https://lassalle-naturopathe.fr/",
+            "github": "",
+			"techno": "WordPress&emsp;HTML&emsp;CSS"
+		},
+        {
+			"id": 10,
+			"image": "gameon.webp",
+			"name": "GameOn",
+			"date": "Novembre 2021",
+            "context": "OpenClassrooms",
+			"description": "Page créée à partir d'un code existant durant ma formation. L'objectif était de modifier le formulaire afin qu'une validation soit faite pour chaque champ.",
+            "link": "https://gameon.laurythiallier.fr",
+            "github": "https://github.com/Laury-THIALLIER/LauryTHIALLIER_4_31102021",
+			"techno": "JavaScript"
+		},
+		{
+			"id": 11,
+			"image": "spa_suite.webp",
+			"name": "Spa Suite",
+			"date": "Décembre 2021",
+            "context": "Karte Blanche",
+			"description": "Landing page créée from scratch pour une entreprise de location de suite spa.",
+            "link": "https://spasuite.laurythiallier.fr",
+            "github": "https://github.com/Laury-THIALLIER/Spa-Suite",
+			"techno": "HTML&emsp;CSS&emsp;JavaScript"
+		},
+		{
+			"id": 12,
+			"image": "game_of_thrones.webp",
+			"name": "Game of Thrones Simulator",
+			"date": "Janvier 2022",
+            "context": "Projet perso",
+			"description": "Site web créé à partir d'un code back-end existant. Seul le front-end a été modifié. Le jeu a également été traduit.",
+            "link": "https://gameofthrones.laurythiallier.fr/",
+            "github": "https://github.com/Laury-THIALLIER/Game_of_Thrones",
+			"techno": "HTML&emsp;CSS"
+		},
+		{
+			"id": 13,
+			"image": "creationdelogo.webp",
+			"name": "Creationdelogo",
+			"date": "Janvier 2022",
+            "context": "Karte Blanche",
+			"description": "Site web créé from scratch pour mettre en avant la création de logo de l'agence.",
+            "link": "https://creationdelogo.pro/",
+            "github": "https://github.com/Laury-THIALLIER/Creationdelogo.pro",
+			"techno": "HTML&emsp;CSS&emsp;JavaScript&emsp;PHP"
+		},
+		{
+			"id": 14,
+			"image": "fisheye.webp",
+			"name": "Fisheye",
+			"date": "Février 2022",
+            "context": "OpenClassrooms",
+			"description": "Site web créé from scratch durant ma formation. L'objectif était de récupérer les données des photographes à partir d'un fichier JSON.",
+            "link": "https://laury-thiallier.github.io/LauryTHIALLIER_6_16122021/",
+            "github": "https://github.com/Laury-THIALLIER/LauryTHIALLIER_6_16122021",
+			"techno": "HTML&emsp;CSS&emsp;JavaScript"
+		},
+		{
+			"id": 15,
+			"image": "portfolio.webp",
+			"name": "Portfolio",
+			"date": "Mars 2022",
+            "context": "Projet perso",
+			"description": "Mon portfolio créé from scratch afin de me présenter moi et mes travaux. J'ai voulu faire un portfolio original qui sortait du lot.",
+            "link": "https://laurythiallier.fr/",
+            "github": "https://github.com/Laury-THIALLIER/Portfolio",
+			"techno": "HTML&emsp;SCSS&emsp;JavaScript&emsp;PHP"
+		}
+    ]
+}

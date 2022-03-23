@@ -1,0 +1,60 @@
+.gallery_zoom {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #ffffff;
+  &__statusbar {
+    background-color: #000000;
+    height: 33px;
+  }
+  &__title {
+    background-color: #282828;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    img {
+      height: 30px;
+      margin-left: 15px;
+      cursor: pointer;
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 400;
+      color: white;
+      margin-left: 20px;
+    }
+  }
+  &__background {
+    background-color: #000000;
+    height: 715px;
+    display: flex;
+    align-items: center;
+    .img {
+      margin-top: -20px;
+    }
+  }
+  &__navbar {
+    background-color: #282828;
+    height: 46px;
+  }
+}
+
+@media screen and (max-height: 845px) {
+  .gallery_zoom {
+    max-height: 100%;
+    &__background {
+      height: 100vh;
+      img {
+        margin-top: -150px;
+      }
+    }
+    &__navbar {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+}

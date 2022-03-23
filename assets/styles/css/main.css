@@ -1,0 +1,2416 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+::-moz-selection {
+  color: white;
+  background: rgba(0, 0, 0, 0);
+}
+
+::selection {
+  color: white;
+  background: rgba(0, 0, 0, 0);
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: no-repeat center url(../../images/decorations/background.webp);
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.phone {
+  border: 12px solid #151518;
+  border-radius: 50px;
+  height: 844px;
+  width: 390px;
+  overflow: hidden;
+  position: relative;
+  -webkit-filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.6));
+          filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.6));
+}
+
+.phone .statusbar {
+  position: absolute;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  width: 100%;
+  font-size: 14px;
+  padding: 8px 0;
+}
+
+.phone .statusbar__hour {
+  padding-left: 20px;
+}
+
+.phone .statusbar__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 20px;
+}
+
+.phone .statusbar__icons img {
+  height: 15px;
+}
+
+.phone .statusbar__icons p {
+  margin: 0;
+}
+
+.navbar {
+  position: absolute;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 90px;
+  width: 100%;
+  bottom: 13px;
+}
+
+.navbar .button {
+  cursor: pointer;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+  }
+}
+
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .phone {
+    border: none;
+    border-radius: 0;
+    height: 100vh;
+    width: 100vh;
+    overflow: hidden;
+    position: relative;
+    -webkit-filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.6));
+            filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.6));
+  }
+  .phone .statusbar {
+    position: absolute;
+    z-index: 100;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+    width: 100%;
+    font-size: 14px;
+    padding: 8px 0;
+  }
+  .phone .statusbar__hour {
+    padding-left: 20px;
+  }
+  .phone .statusbar__icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-right: 20px;
+  }
+  .phone .statusbar__icons img {
+    height: 15px;
+  }
+  .phone .statusbar__icons p {
+    margin: 0;
+  }
+  .navbar {
+    position: absolute;
+    z-index: 100;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 90px;
+    width: 100%;
+    bottom: 13px;
+  }
+  .navbar .button {
+    cursor: pointer;
+  }
+}
+
+.phone {
+  background: no-repeat url(../../images/decorations/phone_background.jpg);
+}
+
+.clock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  margin-top: 90px;
+}
+
+.clock p {
+  margin: 0;
+}
+
+.clock__hour {
+  font-size: 90px;
+  font-weight: 300;
+}
+
+.clock__date {
+  font-size: 20px;
+}
+
+.apps {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0;
+  grid-row-gap: 50px;
+  margin-top: 55px;
+  color: white;
+  font-size: 12px;
+}
+
+.apps__app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.apps__app img {
+  cursor: pointer;
+}
+
+.apps__app p {
+  margin: 15px 0 0 0;
+}
+
+.bottom_apps {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[1];
+      grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 0;
+  grid-row-gap: 50px;
+  margin-top: 95px;
+  color: white;
+  font-size: 12px;
+}
+
+.bottom_apps img {
+  cursor: pointer;
+}
+
+.bottom_apps__app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 450px) {
+  .phone {
+    background: no-repeat center url(../../images/decorations/phone_background.jpg);
+  }
+  .clock {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+    margin-top: 90px;
+  }
+  .clock p {
+    margin: 0;
+  }
+  .clock__hour {
+    font-size: 80px;
+    font-weight: 300;
+  }
+  .clock__date {
+    font-size: 20px;
+  }
+  .apps {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 50px;
+    margin-top: 55px;
+    color: white;
+    font-size: 12px;
+  }
+  .apps__app {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .apps__app img {
+    cursor: pointer;
+  }
+  .apps__app p {
+    margin: 15px 0 0 0;
+  }
+  .bottom_apps {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: (1fr)[1];
+        grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 50px;
+    margin-top: 95px;
+    color: white;
+    font-size: 12px;
+  }
+  .bottom_apps img {
+    cursor: pointer;
+  }
+  .bottom_apps__app {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-height: 675px) {
+  .phone {
+    background: no-repeat center url(../../images/decorations/phone_background.jpg);
+  }
+  .clock {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+    margin-top: 5vh;
+  }
+  .clock p {
+    margin: 0;
+  }
+  .clock__hour {
+    font-size: 80px;
+    font-weight: 300;
+  }
+  .clock__date {
+    font-size: 20px;
+  }
+  .apps {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 50px;
+    margin-top: 55px;
+    color: white;
+    font-size: 12px;
+  }
+  .apps__app {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .apps__app img {
+    cursor: pointer;
+  }
+  .apps__app p {
+    margin: 15px 0 0 0;
+  }
+  .bottom_apps {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: (1fr)[1];
+        grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 50px;
+    margin-top: 95px;
+    color: white;
+    font-size: 12px;
+  }
+  .bottom_apps img {
+    cursor: pointer;
+  }
+  .bottom_apps__app {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.trello {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.trello__statusbar {
+  background-color: #003060;
+  height: 33px;
+}
+
+.trello__title {
+  background-color: #00407e;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.trello__title img {
+  height: 30px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.trello__title h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  margin-left: 20px;
+}
+
+.trello__background {
+  background-color: #0079be;
+  height: 715px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.trello__background .column {
+  background-color: #222222;
+  height: 95%;
+  width: 355px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+  overflow-y: scroll;
+  gap: 15px;
+  scrollbar-width: none;
+}
+
+.trello__background .column .project {
+  background-color: #2c2c2c;
+  color: white;
+  height: 270px;
+  width: 338px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.trello__background .column .project img {
+  border-radius: 5px 5px 0px 0px;
+}
+
+.trello__background .column .project .badges {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+}
+
+.trello__background .column .project .badges p {
+  padding: 3px;
+  border-radius: 3px;
+  margin-left: 8px;
+}
+
+.trello__background .column .project .badges .html {
+  background-color: #f16529;
+}
+
+.trello__background .column .project .badges .css {
+  background-color: #2a64f1;
+}
+
+.trello__background .column .project .badges .scss {
+  background-color: #cc6798;
+}
+
+.trello__background .column .project .badges .bootstrap {
+  background-color: #593688;
+}
+
+.trello__background .column .project .badges .javascript {
+  background-color: #ffda3e;
+}
+
+.trello__background .column .project .badges .wordpress {
+  background-color: #0087be;
+}
+
+.trello__background .column .project .badges .php {
+  background-color: #767bb2;
+}
+
+.trello__background .column .project .badges .sql {
+  background-color: #222222;
+}
+
+.trello__background .column .project h4 {
+  margin: 3px 0 10px 8px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.trello__navbar {
+  background-color: #004972;
+  height: 46px;
+}
+
+@media screen and (max-height: 845px) {
+  .trello {
+    max-height: 100%;
+  }
+  .trello__background {
+    height: 100vh;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .trello__background .column {
+    height: 80%;
+    margin-top: 2%;
+  }
+  .trello__navbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.trello_details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.trello_details #project_details {
+  display: none;
+}
+
+.trello_details__statusbar {
+  background-color: #003060;
+  height: 33px;
+}
+
+.trello_details__title {
+  background-color: #00407e;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.trello_details__title img {
+  height: 30px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.trello_details__title h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  margin-left: 20px;
+}
+
+.trello_details__background {
+  background-color: #2c2c2c;
+  height: 715px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #ffffff;
+}
+
+.trello_details__background img.project {
+  width: 100%;
+  height: 219px;
+}
+
+.trello_details__background h6 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 20px 0 20px 20px;
+}
+
+.trello_details__background .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.trello_details__background .description img {
+  height: 30px;
+  margin-left: 20px;
+}
+
+.trello_details__background .description p {
+  font-size: 14px;
+  margin: 3px 10px 0 10px;
+}
+
+.trello_details__background .description p a {
+  display: inline;
+  color: white;
+}
+
+.trello_details__background .badges {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.trello_details__background .badges img {
+  height: 30px;
+}
+
+.trello_details__background .badges p {
+  padding: 3px;
+  border-radius: 3px;
+  margin-left: 10px;
+}
+
+.trello_details__background .badges .html {
+  background-color: #f16529;
+}
+
+.trello_details__background .badges .css {
+  background-color: #2a64f1;
+}
+
+.trello_details__background .badges .scss {
+  background-color: #cc6798;
+}
+
+.trello_details__background .badges .bootstrap {
+  background-color: #593688;
+}
+
+.trello_details__background .badges .javascript {
+  background-color: #ffda3e;
+}
+
+.trello_details__background .badges .wordpress {
+  background-color: #0087be;
+}
+
+.trello_details__background .badges .php {
+  background-color: #767bb2;
+}
+
+.trello_details__background .badges .sql {
+  background-color: #222222;
+}
+
+.trello_details__navbar {
+  background-color: #004972;
+  height: 46px;
+}
+
+@media screen and (max-height: 845px) {
+  .trello_details {
+    max-height: 100%;
+  }
+  .trello_details__background {
+    height: 100vh;
+  }
+  .trello_details__navbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.linkedin {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #ffffff;
+}
+
+.linkedin__statusbar {
+  background-color: #000000;
+  height: 33px;
+}
+
+.linkedin__title {
+  background-color: #1d2226;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.linkedin__title img {
+  height: 30px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.linkedin__title h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  margin-left: 20px;
+}
+
+.linkedin__background {
+  background-color: #000000;
+  height: 715px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.linkedin__background .infos {
+  background-color: #1d2226;
+}
+
+.linkedin__background .infos .banner {
+  background-color: #e7e7e7;
+  height: 90px;
+  width: 100%;
+}
+
+.linkedin__background .infos .profile_picture {
+  border-radius: 100%;
+  border: solid 5px #1d2226;
+  margin: -65px 0 0 15px;
+  background-color: #282828;
+}
+
+.linkedin__background .infos h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 10px 0 5px 15px;
+}
+
+.linkedin__background .infos h3,
+.linkedin__background .infos p {
+  font-size: 14px;
+  margin: 0 0 0 15px;
+  font-weight: 400;
+}
+
+.linkedin__background .infos h3 {
+  margin-bottom: 15px;
+}
+
+.linkedin__background .infos .location {
+  margin-top: 5px;
+  color: #a9aaae;
+  margin-bottom: 15px;
+}
+
+.linkedin__background .infos .relations {
+  font-weight: 500;
+  color: #73b4f8;
+}
+
+.linkedin__background .infos .buttons {
+  padding: 15px 15px 25px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.linkedin__background .infos .buttons a {
+  text-decoration: none;
+  border-radius: 15px;
+  padding: 4px 33px;
+  width: 105px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.linkedin__background .infos .buttons a p {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.linkedin__background .infos .buttons__contact {
+  background-color: #70b5fa;
+  color: #1d2226;
+  border: 2px solid #70b5fa00;
+}
+
+.linkedin__background .infos .buttons__message {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+.linkedin__background .experience {
+  background-color: #1d2226;
+  margin-top: 10px;
+  padding: 15px;
+}
+
+.linkedin__background .experience .title {
+  margin: 0 0 25px 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.linkedin__background .experience .job,
+.linkedin__background .experience .formation,
+.linkedin__background .experience .licence {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.linkedin__background .experience .job img,
+.linkedin__background .experience .formation img,
+.linkedin__background .experience .licence img {
+  width: 46px;
+  height: 46px;
+}
+
+.linkedin__background .experience .job__infos,
+.linkedin__background .experience .formation__infos,
+.linkedin__background .experience .licence__infos {
+  margin-left: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+}
+
+.linkedin__background .experience .job__infos .name,
+.linkedin__background .experience .formation__infos .name,
+.linkedin__background .experience .licence__infos .name {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.linkedin__background .experience .job__infos .company,
+.linkedin__background .experience .job__infos .degree,
+.linkedin__background .experience .formation__infos .company,
+.linkedin__background .experience .formation__infos .degree,
+.linkedin__background .experience .licence__infos .company,
+.linkedin__background .experience .licence__infos .degree {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.linkedin__background .experience .job__infos .date,
+.linkedin__background .experience .job__infos .location,
+.linkedin__background .experience .formation__infos .date,
+.linkedin__background .experience .formation__infos .location,
+.linkedin__background .experience .licence__infos .date,
+.linkedin__background .experience .licence__infos .location {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 400;
+  color: #a9aaae;
+}
+
+.linkedin__background .experience .job__infos .description,
+.linkedin__background .experience .formation__infos .description,
+.linkedin__background .experience .licence__infos .description {
+  margin: 10px 0 0 0;
+  font-size: 13px;
+  font-weight: 400;
+  -webkit-padding-start: 10px;
+          padding-inline-start: 10px;
+  list-style-type: "-  ";
+}
+
+.linkedin__background .experience .job__infos .description li,
+.linkedin__background .experience .formation__infos .description li,
+.linkedin__background .experience .licence__infos .description li {
+  margin-bottom: 5px;
+}
+
+.linkedin__background .experience hr {
+  background-color: #383d40;
+  height: 1px;
+  border: none;
+  margin: 10px 0 20px 0;
+}
+
+.linkedin__navbar {
+  background-color: #282828;
+  height: 46px;
+}
+
+@media screen and (max-height: 845px) {
+  .linkedin {
+    max-height: 100%;
+  }
+  .linkedin__background {
+    height: 100vh;
+  }
+  .linkedin__background .mobile_experience {
+    background-color: #1d2226;
+    margin-top: 10px;
+    padding: 15px;
+    margin-bottom: 130px;
+  }
+  .linkedin__navbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.steam {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #ffffff;
+}
+
+.steam__statusbar {
+  background-color: #000000;
+  height: 33px;
+}
+
+.steam__title {
+  background-color: #171a21;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.steam__title img {
+  height: 30px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.steam__title h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  margin-left: 20px;
+}
+
+.steam__background {
+  background-color: #252831;
+  height: 685px;
+  padding: 15px;
+}
+
+.steam__background h2 {
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0 0 15px 0;
+}
+
+.steam__background .location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.steam__background .location img {
+  margin: 0 8px 0 0;
+}
+
+.steam__background .location p {
+  margin: 0;
+  color: #a9aaae;
+  font-size: 14px;
+}
+
+.steam__background .infos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.steam__background .infos .profile_picture {
+  margin: 0 15px 0 0;
+  height: 120px;
+  width: 120px;
+}
+
+.steam__background .infos p {
+  margin: 0;
+}
+
+.steam__background .infos .level {
+  font-size: 20px;
+  font-weight: 300;
+  margin: 5px 0 15px 0;
+}
+
+.steam__background .infos .level span {
+  padding: 5px;
+  border: 2px solid #bc2941;
+  border-radius: 100%;
+}
+
+.steam__background .infos .badge_level {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.steam__background .infos .badge_level .badge {
+  background-color: #241e24;
+  width: 228px;
+  height: 70px;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.steam__background .infos .badge_level .badge img {
+  margin: 0 8px 0 5px;
+}
+
+.steam__background .infos .badge_level .badge div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.steam__background .infos .badge_level .badge div h3 {
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0 0 5px 0;
+}
+
+.steam__background .infos .badge_level .badge div p {
+  font-size: 12px;
+}
+
+.steam__background .description {
+  font-size: 12px;
+  padding: 3px 0 10px 0;
+  color: #a9aaae;
+}
+
+.steam__background .status {
+  width: 100%;
+  height: 40px;
+  background-color: #241e24;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.steam__background .status p {
+  margin-left: 8px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #a9aaae;
+}
+
+.steam__background .badges {
+  width: 100%;
+  background-color: #241e24;
+  margin-top: 15px;
+}
+
+.steam__background .badges h6 {
+  font-size: 16px;
+  font-weight: 300;
+  padding: 10px 0 20px 8px;
+  margin: 0;
+}
+
+.steam__background .badges .badges_icons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[7];
+      grid-template-columns: repeat(7, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 3px;
+  grid-row-gap: 15px;
+  padding-bottom: 10px;
+}
+
+.steam__background .badges .badges_icons img {
+  margin: auto;
+}
+
+.steam__background .games {
+  width: 100%;
+  background-color: #241e24;
+  margin-top: 15px;
+}
+
+.steam__background .games h6 {
+  font-size: 16px;
+  font-weight: 300;
+  padding: 10px 0 15px 8px;
+  margin: 0;
+}
+
+.steam__background .games .games_icons img {
+  margin: 0 5px 5px 8px;
+}
+
+.steam__navbar {
+  background-color: #000000;
+  height: 46px;
+}
+
+@media screen and (max-height: 845px) {
+  .steam {
+    max-height: 100%;
+  }
+  .steam__background {
+    height: 100vh;
+    overflow-y: scroll;
+    scrollbar-width: none;
+  }
+  .steam__background .games {
+    margin-bottom: 150px;
+  }
+  .steam__navbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.gallery {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #ffffff;
+}
+
+.gallery__statusbar {
+  background-color: #000000;
+  height: 33px;
+}
+
+.gallery__title {
+  background-color: #282828;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gallery__title img {
+  height: 30px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.gallery__title h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  margin-left: 20px;
+}
+
+.gallery__background {
+  background-color: #000000;
+  height: 685px;
+  padding: 15px;
+}
+
+.gallery__background .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[5];
+      grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.gallery__background .grid img {
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.gallery__navbar {
+  background-color: #282828;
+  height: 46px;
+}
+
+@media screen and (max-height: 845px) {
+  .gallery {
+    max-height: 100%;
+  }
+  .gallery__background {
+    height: 100vh;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .gallery__navbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.gallery_zoom {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #ffffff;
+}
+
+.gallery_zoom__statusbar {
+  background-color: #000000;
+  height: 33px;
+}
+
+.gallery_zoom__title {
+  background-color: #282828;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gallery_zoom__title img {
+  height: 30px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.gallery_zoom__title h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  margin-left: 20px;
+}
+
+.gallery_zoom__background {
+  background-color: #000000;
+  height: 715px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gallery_zoom__background .img {
+  margin-top: -20px;
+}
+
+.gallery_zoom__navbar {
+  background-color: #282828;
+  height: 46px;
+}
+
+@media screen and (max-height: 845px) {
+  .gallery_zoom {
+    max-height: 100%;
+  }
+  .gallery_zoom__background {
+    height: 100vh;
+  }
+  .gallery_zoom__background img {
+    margin-top: -150px;
+  }
+  .gallery_zoom__navbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.music {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #ffffff;
+}
+
+.music__statusbar {
+  background-color: #22233f;
+  height: 33px;
+}
+
+.music__title {
+  background-color: #222341;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.music__title img {
+  height: 30px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.music__title h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  margin-left: 20px;
+}
+
+.music__background {
+  background-color: #2a2c53;
+  height: 685px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  padding: 15px;
+}
+
+.music__background .music_line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.music__background .music_line .album_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.music__background .music_line .album_title .album {
+  height: 48px;
+  width: 48px;
+  margin-right: 15px;
+}
+
+.music__background .music_line .album_title .infos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.music__background .music_line .album_title .infos .title {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0vh;
+}
+
+.music__background .music_line .album_title .infos .time {
+  margin: 3px 0 0 0;
+  color: #a9aaae;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.music__background .music_line .play_pause {
+  cursor: pointer;
+}
+
+.music__background hr {
+  background-color: #54556a;
+  height: 1px;
+  border: none;
+  margin: 10px 0;
+}
+
+.music__navbar {
+  background-color: #282828;
+  height: 46px;
+}
+
+@media screen and (max-height: 845px) {
+  .music {
+    max-height: 100%;
+  }
+  .music__background {
+    height: 100vh;
+  }
+  .music__navbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.netflix {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #ffffff;
+}
+
+.netflix__statusbar {
+  background-color: #000000;
+  height: 33px;
+}
+
+.netflix__title {
+  background-color: #000000;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.netflix__title img {
+  height: 30px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.netflix__title h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  margin-left: 20px;
+}
+
+.netflix__background {
+  background-color: #000000;
+  height: 685px;
+  padding: 15px 6px;
+}
+
+.netflix__background .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 6px;
+  grid-row-gap: 6px;
+}
+
+.netflix__background .grid img {
+  height: 175px;
+  width: 122px;
+}
+
+.netflix__navbar {
+  background-color: #121212;
+  height: 46px;
+}
+
+.calculator {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #ffffff;
+}
+
+.calculator__statusbar {
+  background-color: #111111;
+  height: 33px;
+}
+
+.calculator__title {
+  background-color: #111111;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.calculator__title img {
+  height: 30px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.calculator__title h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  margin-left: 20px;
+}
+
+.calculator__background {
+  background-color: #111111;
+  height: 715px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.calculator__background #output {
+  font-size: 50px;
+  margin-right: 20px;
+  text-align: end;
+  height: 200px;
+}
+
+.calculator__background .grid {
+  height: 335px;
+  width: 390px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  background-color: #000000;
+}
+
+.calculator__background .grid button {
+  font-size: 26px;
+  color: #ffffff;
+  background-color: #00000000;
+  border: none;
+  cursor: pointer;
+}
+
+.calculator__background .grid button.blue {
+  color: #88b5f8 !important;
+}
+
+.calculator__background .grid button.deleteC {
+  font-size: 20px;
+}
+
+.calculator__background .grid button.void {
+  cursor: default;
+}
+
+.calculator__navbar {
+  background-color: #282828;
+  height: 46px;
+}
+
+@media screen and (max-height: 845px) {
+  .calculator {
+    max-height: 100%;
+  }
+  .calculator__background {
+    height: 100vh;
+  }
+  .calculator__background .grid {
+    margin-bottom: 130px;
+  }
+  .calculator__navbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .calculator__background .grid {
+    width: 100%;
+  }
+}
+
+.dashlane {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #ffffff;
+}
+
+.dashlane__statusbar {
+  background-color: #0e353d;
+  height: 33px;
+}
+
+.dashlane__title {
+  background-color: #0e353d;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dashlane__title img {
+  height: 30px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.dashlane__title h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  margin-left: 20px;
+}
+
+.dashlane__background {
+  background-color: #0d262c;
+  height: 715px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dashlane__background .first_unlock {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 20px 15px;
+  opacity: 50%;
+}
+
+.dashlane__background .first_mail {
+  opacity: 50%;
+  margin: 20px 15px;
+}
+
+.dashlane__background .authentification {
+  background-color: #000000;
+  margin: 5px;
+}
+
+.dashlane__background .authentification .second_unlock {
+  font-size: 20px;
+  margin: 20px 0 10px 25px;
+}
+
+.dashlane__background .authentification .second_mail {
+  font-size: 15px;
+  margin: 15px 0 10px 25px;
+}
+
+.dashlane__background .authentification .biometric {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dashlane__background .authentification .biometric img {
+  height: 50px;
+  margin: 50px 0 10px 0;
+}
+
+.dashlane__background .authentification .biometric p {
+  opacity: 50%;
+  font-size: 12px;
+  margin-bottom: 50px;
+}
+
+.dashlane__navbar {
+  background-color: #282828;
+  height: 46px;
+}
+
+@media screen and (max-height: 845px) {
+  .dashlane {
+    max-height: 100%;
+  }
+  .dashlane__background {
+    height: 100vh;
+  }
+  .dashlane__background .authentification {
+    margin-bottom: 130px;
+  }
+  .dashlane__navbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.notes {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #ffffff;
+}
+
+.notes__statusbar {
+  background-color: #2e2f33;
+  height: 33px;
+}
+
+.notes__title {
+  background-color: #2e2f33;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.notes__title img {
+  height: 30px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.notes__title h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  margin-left: 20px;
+}
+
+.notes__background {
+  background-color: #1f1f1f;
+  height: 695px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+}
+
+.notes__background .first_column,
+.notes__background .second_column {
+  width: 180px;
+}
+
+.notes__background .first_column .note,
+.notes__background .second_column .note {
+  border: 1px solid #767676;
+  border-radius: 8px;
+  width: 160px;
+  padding: 10px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  cursor: default;
+}
+
+.notes__background .first_column .note .title,
+.notes__background .second_column .note .title {
+  font-size: 16px;
+  margin: 0 0 8px 0;
+  font-weight: 500;
+}
+
+.notes__background .first_column .note ul.content,
+.notes__background .second_column .note ul.content {
+  font-size: 12px;
+  margin: 3px 0;
+  list-style-type: "- ";
+  padding-left: 10px;
+}
+
+.notes__background .first_column .note p.content,
+.notes__background .second_column .note p.content {
+  font-size: 12px;
+  margin: 3px 0;
+}
+
+.notes__navbar {
+  background-color: #2e2f33;
+  height: 46px;
+}
+
+@media screen and (max-height: 845px) {
+  .notes {
+    max-height: 100%;
+  }
+  .notes__background {
+    height: 100vh;
+  }
+  .notes__navbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.gmail {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #ffffff;
+}
+
+.gmail__statusbar {
+  background-color: #1f1f1f;
+  height: 33px;
+}
+
+.gmail__title {
+  background-color: #1f1f1f;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.gmail__title div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gmail__title div img {
+  height: 30px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.gmail__title div h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  margin-left: 20px;
+}
+
+.gmail__title #send {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.gmail__background {
+  background-color: #1f1f1f;
+  height: 685px;
+  padding: 15px;
+}
+
+.gmail__background form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.gmail__background form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gmail__background form div input {
+  height: 40px;
+  width: 330px;
+}
+
+.gmail__background form button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  right: 25px;
+  top: 48px;
+}
+
+.gmail__background form label {
+  color: #c5c7c6;
+}
+
+.gmail__background form input {
+  height: 40px;
+  width: 352px;
+  background-color: #00000000;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.gmail__background form input::-webkit-input-placeholder {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.gmail__background form input:-ms-input-placeholder {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.gmail__background form input::-ms-input-placeholder {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.gmail__background form input::placeholder {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.gmail__background form input#object {
+  padding: 0;
+}
+
+.gmail__background form input#object::-webkit-input-placeholder {
+  color: #c5c7c6;
+}
+
+.gmail__background form input#object:-ms-input-placeholder {
+  color: #c5c7c6;
+}
+
+.gmail__background form input#object::-ms-input-placeholder {
+  color: #c5c7c6;
+}
+
+.gmail__background form input#object::placeholder {
+  color: #c5c7c6;
+}
+
+.gmail__background form textarea {
+  width: 353px;
+  height: 480px;
+  resize: none;
+  background-color: #00000000;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  margin-top: 15px;
+  padding: 0;
+}
+
+.gmail__background form textarea::-webkit-input-placeholder {
+  font-size: 16px;
+  color: #c5c7c6;
+}
+
+.gmail__background form textarea:-ms-input-placeholder {
+  font-size: 16px;
+  color: #c5c7c6;
+}
+
+.gmail__background form textarea::-ms-input-placeholder {
+  font-size: 16px;
+  color: #c5c7c6;
+}
+
+.gmail__background form textarea::placeholder {
+  font-size: 16px;
+  color: #c5c7c6;
+}
+
+.gmail__background form hr {
+  width: 150%;
+  margin-left: -50px;
+  height: 0.1px;
+  border-color: #626264;
+}
+
+.gmail__navbar {
+  background-color: #2e2f33;
+  height: 46px;
+}
+
+@media screen and (max-height: 845px) {
+  .gmail {
+    max-height: 100%;
+  }
+  .gmail__background {
+    height: 100vh;
+  }
+  .gmail__navbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.messages {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #ffffff;
+}
+
+.messages__statusbar {
+  background-color: #202125;
+  height: 33px;
+}
+
+.messages__title {
+  background-color: #202125;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.messages__title img {
+  height: 30px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.messages__title h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  margin-left: 20px;
+}
+
+.messages__background {
+  background-color: #202125;
+  height: 695px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+}
+
+.messages__background .sms_container {
+  margin-top: -10px;
+}
+
+.messages__background .sms_container .sms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0;
+}
+
+.messages__background .sms_container .sms p {
+  margin: 0;
+  cursor: default;
+}
+
+.messages__background .sms_container .sms .profil_picture {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 18px;
+  color: #202125;
+  font-size: 22px;
+}
+
+.messages__background .sms_container .sms .profil_picture.pink {
+  background-color: #ff63b7;
+}
+
+.messages__background .sms_container .sms .profil_picture.red {
+  background-color: #ed675c;
+}
+
+.messages__background .sms_container .sms .profil_picture.yellow {
+  background-color: #fcc834;
+}
+
+.messages__background .sms_container .sms .profil_picture.blue {
+  background-color: #4dcde6;
+}
+
+.messages__background .sms_container .sms .profil_picture.orange {
+  background-color: #fa8f3d;
+}
+
+.messages__background .sms_container .sms .infos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.messages__background .sms_container .sms .infos p:first-child {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 2px 0;
+}
+
+.messages__background .sms_container .sms .infos p:last-child {
+  font-size: 13px;
+  font-weight: 400;
+  color: #a9aaae;
+  margin: 2px 0;
+}
+
+.messages__navbar {
+  background-color: #2e2f33;
+  height: 46px;
+}
+
+@media screen and (max-height: 845px) {
+  .messages {
+    max-height: 100%;
+  }
+  .messages__background {
+    height: 100vh;
+  }
+  .messages__navbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0);
+}
+/*# sourceMappingURL=main.css.map */

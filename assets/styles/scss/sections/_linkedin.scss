@@ -1,0 +1,185 @@
+.linkedin {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #ffffff;
+  &__statusbar {
+    background-color: #000000;
+    height: 33px;
+  }
+  &__title {
+    background-color: #1d2226;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    img {
+      height: 30px;
+      margin-left: 15px;
+      cursor: pointer;
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 400;
+      color: white;
+      margin-left: 20px;
+    }
+  }
+  &__background {
+    background-color: #000000;
+    height: 715px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    .infos {
+      background-color: #1d2226;
+      .banner {
+        background-color: #e7e7e7;
+        height: 90px;
+        width: 100%;
+      }
+      .profile_picture {
+        border-radius: 100%;
+        border: solid 5px #1d2226;
+        margin: -65px 0 0 15px;
+        background-color: #282828;
+      }
+      h2 {
+        font-size: 20px;
+        font-weight: 500;
+        margin: 10px 0 5px 15px;
+      }
+      h3,
+      p {
+        font-size: 14px;
+        margin: 0 0 0 15px;
+        font-weight: 400;
+      }
+      h3 {
+        margin-bottom: 15px;
+      }
+      .location {
+        margin-top: 5px;
+        color: #a9aaae;
+        margin-bottom: 15px;
+      }
+      .relations {
+        font-weight: 500;
+        color: #73b4f8;
+      }
+      .buttons {
+        padding: 15px 15px 25px 15px;
+        display: flex;
+        justify-content: space-between;
+        a {
+          text-decoration: none;
+          border-radius: 15px;
+          padding: 4px 33px;
+          width: 105px;
+          height: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          p {
+            font-size: 14px;
+            font-weight: 500;
+            margin: 0;
+          }
+        }
+        &__contact {
+          background-color: #70b5fa;
+          color: #1d2226;
+          border: 2px solid #70b5fa00;
+        }
+        &__message {
+          border: 2px solid #ffffff;
+          color: #ffffff;
+        }
+      }
+    }
+    .experience {
+      background-color: #1d2226;
+      margin-top: 10px;
+      padding: 15px;
+      .title {
+        margin: 0 0 25px 0;
+        font-size: 18px;
+        font-weight: 500;
+      }
+      .job,
+      .formation,
+      .licence {
+        display: flex;
+        img {
+          width: 46px;
+          height: 46px;
+        }
+        &__infos {
+          margin-left: 15px;
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          .name {
+            margin: 0;
+            font-size: 14px;
+            font-weight: 500;
+          }
+          .company,
+          .degree {
+            margin: 0;
+            font-size: 13px;
+            font-weight: 400;
+          }
+          .date,
+          .location {
+            margin: 0;
+            font-size: 13px;
+            font-weight: 400;
+            color: #a9aaae;
+          }
+          .description {
+            margin: 10px 0 0 0;
+            font-size: 13px;
+            font-weight: 400;
+            padding-inline-start: 10px;
+            list-style-type: "-  ";
+            li {
+              margin-bottom: 5px;
+            }
+          }
+        }
+      }
+      hr {
+        background-color: #383d40;
+        height: 1px;
+        border: none;
+        margin: 10px 0 20px 0;
+      }
+    }
+  }
+  &__navbar {
+    background-color: #282828;
+    height: 46px;
+  }
+}
+
+@media screen and (max-height: 845px) {
+  .linkedin {
+    max-height: 100%;
+    &__background {
+      height: 100vh;
+      .mobile_experience {
+        background-color: #1d2226;
+        margin-top: 10px;
+        padding: 15px;
+        margin-bottom: 130px;
+      }
+    }
+    &__navbar {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+}

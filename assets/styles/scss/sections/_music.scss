@@ -1,0 +1,94 @@
+.music {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #ffffff;
+  &__statusbar {
+    background-color: #22233f;
+    height: 33px;
+  }
+  &__title {
+    background-color: #222341;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    img {
+      height: 30px;
+      margin-left: 15px;
+      cursor: pointer;
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 400;
+      color: white;
+      margin-left: 20px;
+    }
+  }
+  &__background {
+    background-color: #2a2c53;
+    height: 685px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    padding: 15px;
+    .music_line {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      .album_title {
+        display: flex;
+        justify-content: space-between;
+        .album {
+          height: 48px;
+          width: 48px;
+          margin-right: 15px;
+        }
+        .infos {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          .title {
+            font-size: 14px;
+            font-weight: 500;
+            margin: 0vh;
+          }
+          .time {
+            margin: 3px 0 0 0;
+            color: #a9aaae;
+            font-weight: 400;
+            font-size: 13px;
+          }
+        }
+      }
+      .play_pause {
+        cursor: pointer;
+      }
+    }
+    hr {
+      background-color: #54556a;
+      height: 1px;
+      border: none;
+      margin: 10px 0;
+    }
+  }
+  &__navbar {
+    background-color: #282828;
+    height: 46px;
+  }
+}
+
+@media screen and (max-height: 845px) {
+  .music {
+    max-height: 100%;
+    &__background {
+      height: 100vh;
+    }
+    &__navbar {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+}
